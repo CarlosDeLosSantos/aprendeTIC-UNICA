@@ -1,0 +1,54 @@
+@import "designs/variables";
+
+.header1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    .unampart{
+        margin-left: 2rem;
+    }
+    .unicapart{
+        margin-right: 2rem;
+    }
+    img{
+        margin-left: 2rem   ;
+    }
+}
+.header2{
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    background-color: $secundario;
+    width: auto; 
+    border-color: rgb(156, 216, 196) black $secundario;
+    border-width: 5px 0px;
+    border-style: ridge;
+    display: flex;
+    justify-content: space-between;
+    .headerlogo{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        display: inline;
+    }
+    .nav{
+
+        padding-top: 1.9rem;
+        .headeroption{
+            font-size: $title-font-size;
+            padding-right:2rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+    .headeroption:hover{
+        color: $principal;
+    }
+    .pipe{
+        color: white;
+        font-size: $title-font-size;
+        padding-right:2rem;
+    }
+    
+}

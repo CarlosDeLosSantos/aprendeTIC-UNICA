@@ -1,0 +1,68 @@
+.header1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.header1 .unampart {
+  margin-left: 2rem;
+}
+
+.header1 .unicapart {
+  margin-right: 2rem;
+}
+
+.header1 img {
+  margin-left: 2rem;
+}
+
+.header2 {
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+  background-color: #349c84;
+  width: auto;
+  border-color: #9cd8c4 black #349c84;
+  border-width: 5px 0px;
+  border-style: ridge;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header2 .headerlogo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  display: inline;
+}
+
+.header2 .nav {
+  padding-top: 1.9rem;
+}
+
+.header2 .nav .headeroption {
+  font-size: 25px;
+  padding-right: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header2 .headeroption:hover {
+  color: #545464;
+}
+
+.header2 .pipe {
+  color: white;
+  font-size: 25px;
+  padding-right: 2rem;
+}
+/*# sourceMappingURL=app.css.map */
