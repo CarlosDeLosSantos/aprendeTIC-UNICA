@@ -151,12 +151,13 @@
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 0.1rem;
+    margin-left: 8rem;
     color: #165ad8;
+    font-size: 5rem;
 }
 .welcome-text{
     padding-top: 1rem; 
-    text-align: justify;
-
+    text-align: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     font-weight: 200;
@@ -248,7 +249,9 @@
     font-size: 1.9rem;
     font-weight: 200;
     line-height: 100%;
-    
+}
+.servicio .a{
+    text-decoration: none;
 }
 .hvr-shrink {
     display: inline-block;
@@ -263,8 +266,8 @@
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
     transition-property: transform;
-  }
-  .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+    }
+    .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
   }
@@ -676,4 +679,53 @@ blockquote {
 
 .contenedor {
     width: 100%;
+}
+
+#btn-mas{
+    display: none;
+    align-items: center;
+}
+.floats{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+}
+.redes a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: #349c84;
+    color: #fff;
+
+    width: 80px;
+    height: 80px;
+    line-height: 55px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+
+.redes a{
+    opacity: 0;
+    visibility: hidden;
+}
+.redes .float{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+#btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-mas label{
+    cursor: pointer;
+    background:#349c84;
+    
+}
+#btn-mas:checked ~ .btn-mas label{
+    font-size: 25px;
 }

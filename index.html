@@ -16,11 +16,9 @@
 <body>
     <header class="header1">
         <div class="unampart">
-            <a href="https://www.unam.mx/"><img src="img/Escudo Unam.png"  height="101px" alt="Logo unica"> </a>
-            <a href="https://www.ingenieria.unam.mx/"></a><img src="img/Escudo FI Color dibujo PNG.png"  height="95px"alt="Logo unica">
-        </div>
-        <div class="unicapart">
-            <a href="https://www.ingenieria.unam.mx/unica/"><img src="img/UNICA.png"     height="90px" alt="Logo unica"></a>
+            <a href="https://www.unam.mx/"><img src="img/Escudo Unam.png"  height="101px" alt="Logo unam"> </a>
+            <a href="https://www.ingenieria.unam.mx/"><img src="img/Escudo FI Color dibujo PNG.png"  height="95px"alt="Logo FI"></a>
+            <a href="https://www.ingenieria.unam.mx/unica/"><img src="img/UNICA.png"height="90px" alt="Logo unica"></a>
         </div>
         
     </header>
@@ -30,53 +28,33 @@
         </div>
         <ul class="nav">
             <li class="nav-item"><a class="headeroption">Inicio</a></li>
+            <li class="dropdown"><span class="pipe">|</span>
+                <button class="btn dropdown-toggle headeroption" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Oferta
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Diplomados</a></li>
+                  <li><a class="dropdown-item" href="#">Cursos</a></li>
+                  <li><a class="dropdown-item" href="#">Talleres</a></li>
+                </ul>
+            </li>
             <li class="nav-item"><span class="pipe">|</span><a class="headeroption">Descripción</a></li>
-            <li class="nav-item"><span class="pipe">|</span><a class="headeroption">Módulos</a></li>
-            <li class="nav-item"><span class="pipe">|</span><a class="headeroption">Inscríbite</a></li>
+            <li class="nav-item"><span class="pipe">|</span><a class="headeroption">Inscripción</a></li>
             <li class="nav-item"><span class="pipe">|</span><a class="headeroption">Calendario</a></li>
         </ul>
-    
+        
     </header>
-    <!-- <header class="headerUNICA">
-        <div class="logos">
-            <img src="img/unam_logo.png"  alt="Logo Unam">
-            <img src="img/escudoPie.png"   alt="Logo FI">
-            <img src="img/unicalogo.png"    alt="Logo unicA">
-        </div>
-        <div class="barraUNICA">
-            <ul class="nav justify-content-center">
-                <li class="nav-item ">
-                    <a class="nav-link active nav-blanco" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-blanco" href="#">Cursos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-blanco" href="#">Diplomados</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-blanco">Sedes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-blanco">Infórmate</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-blanco">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </header> -->
+
     <section class = "portada">
         <div class="contenido-portada">
             <!-- <img src="img/LOGO_Aprende_TIC_Blanco.png" width="370" height="350" alt="aprendeticingenieria"> -->
         </div>
-        
     </section>
+    
     <section class = "welcome">
         <div class="contenido-welcome">
             <div class="welcome-text">
                 <h2><b>Bienvenido</b></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum doloribus optio Lorem ipsum dol adipisicing elit. Illo autem voluptates distinctio cum id? Quisquam quam numquam aliquam ea eligendi repudiandae fugiat libero nam necessitatibus magnam? Ullam consequuntur incidunt officia?.</p>
             </div>
             <div class="welcome-image">
                 <img src="img/Bienvenida.png"> 
@@ -88,15 +66,18 @@
         <div class="servicio hvr-shrink">
             <img src="img/tic/Diplomados.png" width="125" height="125" alt="serv">
             <p><br>Diplomados</p>
-    </div>
+        </div>
+        <div class="servicio hvr-shrink enlace">
+            <a href="https://www.ingenieria.unam.mx/cursosunica/" style="text-decoration:none; color: black;">
+                <img src = "img/tic/Cursos.png" width="125" height="125" alt="serv">
+                <p><br>Cursos</p>
+            </a>
+        </div>
         <div class="servicio hvr-shrink">
             <img src="img/tic/lineas_especialización.png" width="125" height="125" alt="serv">
             <p> <br>Líneas de <br>especialización </p>
         </div>
-        <div class="servicio hvr-shrink">
-            <img src="img/tic/Cursos.png" width="125" height="125" alt="serv">
-            <a href="https://www.ingenieria.unam.mx/cursosunica/"><p><br>Cursos</p></a>
-        </div>
+        
         <div class="servicio hvr-shrink">
             <img src="img/tic/Talleres.png" width="125" height="130" alt="serv">
             <p><br>Talleres </p>
@@ -195,6 +176,17 @@
             </div>
         </div>
     </section>
+    <div class="floats">
+        <input type="checkbox" id="btn-mas" a>
+        <div class="redes">
+            <a href="#" class="float">Inscripción</a>
+            <a href="#" class="float">Descripción</a>
+            <a href="#" class="float" style="line-height: 100%">Perfil del Participante</a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="plus"><img src="/img/plus.png" width="40" height="40" style="margin-left: 1.22rem; margin-top: 1.1rem;"></label>
+        </div>
+    </div>
     <div class="contenedor">
         <footer id="pie_pagina" class="row bg-dark">
             <div class="col-xl-6   col-lg-6 col-md-6 col-sm-12 col-12   text-light ">
@@ -202,8 +194,10 @@
                     <img src="img/LOGO_Aprende_TIC_Blanco.png" height="95px" id="escudoFI"> 
                     <br>
                     <br>
-                    <span><a href="creditos.php"  class="btn btn-warning">Creditos</a></span>
-                    <span><a href="contacto.php"  class="btn btn-warning">Contacto</a></span>
+                    <span><a href="creditos.html"  class="btn btn-warning">Creditos</a></span>
+                    <span><a href="#"  class="btn btn-warning">Contacto</a></span>
+                    <span><a href="https://www.ingenieria.unam.mx/paginas/aviso_privacidad.php"  class="btn btn-warning">Aviso de Privacidad</a></span>
+                    <span><a href="requerimientos.html"  class="btn btn-warning">Requerimientos Técnicos</a></span>
                 </section> 
             </div>
             <div class="col-xl-6 col-lg-6  col-md-6 col-sm-12 col-12  text-light  " >
@@ -229,5 +223,6 @@
     </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="slide.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

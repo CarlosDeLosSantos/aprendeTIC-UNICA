@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.credits{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 500px);;
+
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="scss/app.css">
+    <link rel="icon" sizes="152x152" href="/img/unicalogo.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+<body>
+  <header class="header1">
+    <div class="unampart">
+        <a href="https://www.unam.mx/"><img src="img/Escudo Unam.png"  height="101px" alt="Logo unam"> </a>
+        <a href="https://www.ingenieria.unam.mx/"><img src="img/Escudo FI Color dibujo PNG.png"  height="95px"alt="Logo FI"></a>
+        <a href="https://www.ingenieria.unam.mx/unica/"><img src="img/UNICA.png"height="90px" alt="Logo unica"></a>
+    </div>
+    
+</header>
+<header class="header2">
+    <div class="headerlogo">
+        <img src="img/LOGO_Aprende_TIC_Blanco.png" height="80px" id="escudoFI"> 
+    </div>
+    <ul class="nav">
+        <li class="nav-item"><a class="headeroption">Inicio</a></li>
+        <li class="dropdown"><span class="pipe">|</span>
+            <button class="btn dropdown-toggle headeroption" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Oferta
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Diplomados</a></li>
+              <li><a class="dropdown-item" href="#">Cursos</a></li>
+              <li><a class="dropdown-item" href="#">Talleres</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><span class="pipe">|</span><a class="headeroption">Descripción</a></li>
+        <li class="nav-item"><span class="pipe">|</span><a class="headeroption">Inscripción</a></li>
+        <li class="nav-item"><span class="pipe">|</span><a class="headeroption">Calendario</a></li>
+    </ul>
+    
+</header>
+<h1 style="text-align: center; margin-top: 1rem;">Creditos</h1>
+<div class="credits">
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2 style="text-align: center;">Dr. Carlos Agustín Escalante Sandoval
+          </h2>
+          <p class="title" style="text-align: center;">Director de la Facultad de Ingeniería
+          </p>
+        </div>
+      </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2 style="text-align: center;">M. en I. Gerardo Ruiz Solorio
+        </h2>
+        <p class ="title" style="text-align: center;">Secretario General de la Facultad de Ingeniería
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2 style="text-align: center;">Ing. Enrique Barranco Vite
+        </h2>
+        <p class ="title" style="text-align: center;">Coordinador de la Unidad de Servicios de Cómputo Académico
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2 style="text-align: center;">Mtra. Ma. del Rosario Barragán Paz 
+        </h2>
+        <p class ="title" style="text-align: center;">Jefa del Departamento de Investigación y Desarrollo
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2 style="text-align: center;">Mtro. Rafael Sandoval Vázquez 
+        </h2>
+        <p class ="title" style="text-align: center;">Departamento de Redes, Servidores y Seguridad
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2 style="text-align: center;">Mtra. Beatriz Barrera Hernández 
+        </h2>
+        <p class ="title" style="text-align: center;">Jefa del Departamento de Servicios Académicos
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="contenedor">
+  <footer id="pie_pagina" class="row bg-dark">
+      <div class="col-xl-6   col-lg-6 col-md-6 col-sm-12 col-12   text-light ">
+          <section class="p-3"  id="logos_fi_unica">
+              <img src="img/LOGO_Aprende_TIC_Blanco.png" height="95px" id="escudoFI"> 
+              <br>
+              <br>
+              <span><a href="creditos.html"  class="btn btn-warning">Creditos</a></span>
+              <span><a href="#"  class="btn btn-warning">Contacto</a></span>
+              <span><a href="https://www.ingenieria.unam.mx/paginas/aviso_privacidad.php"  class="btn btn-warning">Aviso de Privacidad</a></span>
+              <span><a href="requerimientos.html"  class="btn btn-warning">Requerimientos Técnicos</a></span>
+          </section> 
+      </div>
+      <div class="col-xl-6 col-lg-6  col-md-6 col-sm-12 col-12  text-light  " >
+          <section class="p-3"> Universidad Nacional Autónoma de México
+              <br> Facultad de Ingeniería,
+              <br> Av. Universidad 3000, Ciudad Universitaria, Coyoacón, Cd. Mx. CP 04510
+              <hr>
+              <br><a href="mailto://unica@ingenieria.unam.edu" type="button" class="btn btn-info">
+                  eMail: unica@ingenieria.unam.edu
+              </a> 
+          </section>
+      </div>
+      <div class=" col-12  text-light  " style="font-size: smaller;" >
+          <section class="p-3"> 
+              <hr>
+              Hecho en México, Universidad Nacional Autónoma de México (UNAM), todos los derechos reservados 2021.
+              Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica.
+              De otra forma, requiere permiso previo por escrito de la institución.
+          </section>
+      </div>
+      
+  </footer>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
