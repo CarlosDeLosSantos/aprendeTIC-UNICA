@@ -188,6 +188,57 @@
 }
 
 
+#btn-mas{
+    display: none;
+    align-items: center;
+    color: #fff;
+}
+.floats{
+    position: fixed;
+    z-index: 999;
+    bottom: 50px;
+    right: 20px;
+}
+.redes a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    border-radius: 20%;
+    border:2px solid white;
+    color: #fff;
+    width: 85px;
+    height: 80px;
+    line-height: 55px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+
+.redes a{
+    opacity: 0;
+    visibility: hidden;
+}
+.redes .float{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+#btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-mas label{
+    cursor: pointer;
+    background:#3F34A1;
+    
+}
+#btn-mas:checked ~ .btn-mas label{
+    font-size: 25px;
+}
+
+
 .welcome-text p{
     font-size: 20px;
     line-height: 120%;
@@ -650,7 +701,7 @@ blockquote {
   z-index: 0;
 }
   .coolBeans::after{
-    background-color: #6cc474;
+    background-color: #746db8;
     border-radius: 0.4rem;
     content: '';
     display: block;
@@ -677,53 +728,4 @@ blockquote {
 
 .contenedor {
     width: 100%;
-}
-
-#btn-mas{
-    display: none;
-    align-items: center;
-}
-.floats{
-    position: fixed;
-    bottom: 100px;
-    right: 20px;
-}
-.redes a, .btn-mas label{
-    display: block;
-    text-decoration: none;
-    background: #349c84;
-    color: #fff;
-
-    width: 80px;
-    height: 80px;
-    line-height: 55px;
-    border-radius: 50%;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
-    transition: all 500ms ease;
-}
-
-.redes a{
-    opacity: 0;
-    visibility: hidden;
-}
-.redes .float{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    text-align: center;
-    font-weight: bold;
-}
-#btn-mas:checked~ .redes a{
-    margin-bottom: 10px;
-    opacity: 1;
-    visibility: visible;
-}
-.btn-mas label{
-    cursor: pointer;
-    background:#349c84;
-    
-}
-#btn-mas:checked ~ .btn-mas label{
-    font-size: 25px;
 }
