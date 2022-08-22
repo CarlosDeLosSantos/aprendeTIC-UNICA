@@ -308,6 +308,11 @@
     font-size: 1.9rem;
     font-weight: 200;
     line-height: 100%;
+    text-decoration: none;
+}
+.servicio-link{
+    text-decoration: none;
+    color: black;
 }
 
 .hvr-shrink {
@@ -457,7 +462,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
     background: #349c84;/* linear-gradient(180deg, rgba(32, 63, 120, 0.9) 0%, rgba(50, 99, 172, 0.9) 100%); */
 }
 .menu-main img{
@@ -469,7 +473,6 @@
         padding-top: 4rem;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
         background: #349c84
     }
     .menu-main img{
@@ -484,7 +487,6 @@
         padding-top: 4rem;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
         background: #349c84;
     }
     .menu-main img{
@@ -510,7 +512,8 @@
 .menu-options{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
     padding-top: 1rem;
     padding-bottom: 7rem;
     padding-left: 0.7rem;
@@ -524,7 +527,6 @@
     .menu-options{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
     padding-top: 1rem;
     padding-bottom: 7rem;
     width: 50%;
@@ -598,7 +600,6 @@ blockquote {
     border-left: 10px solid #ccc;
     margin: 1.5em 10px;
     padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
   }
   blockquote:before {
     color: #ccc;
