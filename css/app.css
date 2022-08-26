@@ -738,3 +738,7 @@ blockquote {
 .contenedor {
     width: 100%;
 }
+.servicio a{
+    text-decoration: none;
+    color: none;
+}
