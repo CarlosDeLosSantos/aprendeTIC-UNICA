@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+:root{
+    /* Colores */
+    --verde: #349c84;
+    --blanco:#FFF;
+    --negro: #000;
+
+    /* Fuentes */
+    --fuenteEnlaces:'Titillium Web', sans-serif;
+    --fuenteHeader: 'Merriweather',serif;
+    --fuentePrincipal:'IBM Plex Sans', sans-serif;
+}
+/*Globales, ayudan a estructurar mejor el contenido*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0;
+}
+li
+{
+    margin: 0;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    text-align: center;
+    /*color: var(--secundario);
+    font-family: var(--fuentePrincipal);*/
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+/* Header */
+.headerLogos{
+    display:flex;
+}
+.logos{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 761px) {
+    .logos{
+        height: 11rem;
+        justify-content: space-between;
+    }
+}
+.logos img{
+    margin-left: 2rem;
+}
+/* Barra de navegación */
+.navbar{
+    background-color: var(--verde);
+    padding: 0rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+    }
+}
+
+.navbar__Options{
+    list-style-type: none;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .navbar__Options{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+.nav_item{
+    margin: 1rem 0rem;
+    padding-right: 5rem;
+    font-family: var(--fuenteEnlaces);
+    font-size: 3rem;
+}
+.nav_item:hover{
+    background-color: #555;
+}
+@media (min-width: 768px) {
+    .nav_item{
+        margin: 0 2rem;
+        padding-right: 0;
+    }
+    .nav_item:hover{
+        background-color: inherit;
+    }
+}
+.nav_item, .nav_item a{
+    color: var(--blanco);
+}
+.pipe{
+    color: var(--blanco);
+    font-size: 4rem;
+    padding-right:5rem;
+    visibility: hidden;
+}
+@media (min-width: 768px) {
+    .pipe{
+        visibility: visible;
+    }
+}
+
+/* Imagen de fondo que sirve como portada */
+.portada{
+    position: relative;
+    background-image: url(/img/portada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    position: absolute;
+}
+/*Capa de color que está encima de la imágen*/
+.portada--gradient{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #349c84c7 0%, rgba(50, 99, 172, 0.87) 100%); 
+}
+
+/*Sección de bienvenido*/
+.welcome{
+    position: relative;
+    margin-top: 5rem;
+}
+.welcome-image img{
+    width: auto;
+    height: 17rem;
+}
+@media (min-width: 768px) {
+    .welcome{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .welcome-image img{
+        height: 29rem;
+        width: 40rem;
+    }
+}
+.contenido-welcome{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: var(--blanco);
+    border-radius: 5rem;
+    width: auto;
+    height: 32rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+@media (min-width: 768px) {
+    .contenido-welcome{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.welcome-text h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: var(--fuenteHeader);
+    margin-left: 0rem;
+    color: #165ad8;
+    font-size: 4rem;   
+}
+@media (min-width: 768px) {
+    .welcome-text h2{
+    font-size: 8rem; 
+    }
+}
+
