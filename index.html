@@ -25,13 +25,20 @@
             </div>
 
             <ul class="navbar__Options">
-                <li class="nav_item"><span class="pipe servicio">|</span><a href="index.html">Inicio</a></li>
-                <li class="nav_item"><span class="pipe servicio">|</span>Oferta</li>
-                <li class="nav_item"><span class="pipe servicio">|</span><a href="#">Descripción</a></li>
-                <li class="nav_item"><span class="pipe servicio">|</span><a href="#">Inscripción</a></li>
-                <li class="nav_item"><span class="pipe servicio">|</span><a href="#">Calendario</a></li>
+                <li class="nav_item"><span class="pipe">|</span><a href="index.html">Inicio</a></li>
+                <li class="nav_item"><span class="pipe">|</span><div class="dropdown">
+                    Oferta <i class="arrow down"></i>
+                    <div class="dropdown-content">
+                    <a href="#">Diplomados</a>
+                    <a href="#">Cursos</a>
+                    <a href="#">Talleres</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav_item"><span class="pipe">|</span><a href="#">Descripción</a></li>
+                <li class="nav_item"><span class="pipe">|</span><a href="#">Inscripción</a></li>
+                <li class="nav_item"><span class="pipe">|</span><a href="#">Calendario</a></li>
             </ul>
-
         </nav>
 
     </header>
@@ -51,5 +58,77 @@
                 </div>
             </div>
     </section>
+    
+    <section class="lista-servicios">
+        <div class="servicio hvr-shrink">
+            <a href="https://www.ingenieria.unam.mx/cursosunica/">
+                <img src="img/Diplomados.png" width="125" height="125" alt="serv">
+                <p><br>Diplomados</p>
+            </a>
+        </a>
+        </div>
+        <div class="servicio hvr-shrink enlace">
+            <a href="https://www.ingenieria.unam.mx/cursosunica/" style="text-decoration:none; color: black;">
+                <img src = "img/Cursos.png" width="125" height="125" alt="serv">
+                <p><br>Cursos</p>
+            </a>
+        </div>
+        <div class="servicio hvr-shrink">
+            <img src="img/lineas_especializacion.png" width="125" height="125" alt="serv">
+            <p> <br>Líneas de <br><br>especialización </p>
+        </div>
+        
+        <div class="servicio hvr-shrink">
+            <img src="img/talleres.png" width="125" height="130" alt="serv">
+            <p><br>Talleres </p>
+        </div>
+    </section>
+    <section class="menu">
+        <!--SLIDER-->
+        <div class="slide-servicios">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <!-- Slide 1 - DIPLOMADO -->
+                    <div class="swiper-slide">
+                        <a href="https://www.ingenieria.unam.mx/diplomadosunica/">
+                        <img src="img/diplomados-slider.jpg" >
+                    </a> 
+                    </div>
+                    <!-- Slide 2 - LÍNEAS DE ESPECIALIZACIÓN -->
+                    <div class="swiper-slide">
+                        <img src="img/especializacion-slider.jpg" >
+                    </div>
+                    <!-- Slide 3 - CURSOS -->
+                    <div class="swiper-slide">
+                        <img src="img/cursos-slider.jpg" >
+                    </div>
+                    <!-- Slide 4 - TALLERES -->
+                    <div class="swiper-slide">
+                        <img src="img/talleres-slider.jpg" >
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="floats">
+        <input type="checkbox" id="btn-mas" a>
+        <div class="redes">
+            <a href="#" class="float" style="background: #338093;">Inscripción</a>
+            <a href="#" class="float" style="background: #336598">Descripción</a>
+            <a href="#" class="float" style="line-height: 100%; background: #38489D">Perfil del Participante</a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="plus"><img src="img/icons/arrowUP.png" width="40" height="40" style="margin-left: 1.99rem; margin-top: 1.7rem;"></label>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="slide.js"></script>
 </body>
 </html>
