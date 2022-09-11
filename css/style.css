@@ -80,21 +80,32 @@ li
 .navbar{
     background-color: var(--verde);
     padding: 0rem 3.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+} 
+.navbar__Logo{
+    margin-right: 0;
 }
-
-@media (min-width:821px) {
-    .navbar{
-        flex-direction: row;
-        justify-content: space-between;
-        width: 250rem;
-        max-width: 100%;
+@media (min-width: 1000px) {
+    .navbar__Logo{
+        margin-right: 3rem;
     }
 }
-
+@media (min-width: 1121px) {
+    .navbar__Logo{
+        margin-right: 10rem;
+    }
+}
+@media (min-width: 1200px) {
+    .navbar__Logo{
+        margin-right: 25rem;
+    }
+}
+@media (min-width: 1300px) {
+    .navbar__Logo{
+        margin-right: 35rem;
+    }
+}
 
 .navbar__Options{
     list-style-type: none;
@@ -118,7 +129,7 @@ li
     .nav_item{
         font-size: 2.1rem;
         padding: 0rem 0.5rem;
-        text-align: justify;
+        text-align: center;
     }
 }
 @media (min-width: 1000px) {
@@ -131,7 +142,7 @@ li
 .nav_item:hover{
     background-color: var(--navitem);
 }
-@media (min-width: 821px) {
+@media (min-width: 1000px) {
     .nav_item{
         margin: 0 1rem;
         padding-right: 0;
@@ -202,11 +213,13 @@ li
     padding-right:1.5rem;
     visibility: hidden;
 }
-@media (min-width: 821px) {
+@media (min-width: 1000px) {
     .pipe{
         visibility: visible;
     }
 }
+
+/* Burger Menu*/
 
 /* Imagen de fondo que sirve como portada */
 .portada{
@@ -362,13 +375,13 @@ li
     z-index: 999;
     bottom: 50px;
     right: 20px;
-    display: none;
+    /* display: none; */
 }
-@media (min-width: 820px) {
+/* @media (min-width: 820px) {
     .floats{
         display: inherit;
     }
-}
+} */
 .redes a, .btn-mas label{
     display: block;
     text-decoration: none;
@@ -663,7 +676,7 @@ blockquote {
     border-radius: 50px;
     width: 100rem;
 }
-@media (min-width: 380px) {
+@media (min-width: 320px) {
     .card{
         width: 37rem;
     }
